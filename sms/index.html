@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMS Opt-In and Terms — Reign OS</title>
+  <meta name="description" content="How clients opt in to Reign booking text messages, what they receive, and how to opt out.">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/logo.png" alt="" width="40" height="40">Reign OS</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/#features" class="hide-sm">Features</a>
+        <a href="/sms/" aria-current="page">SMS</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="wrap">
+      <h1>Booking Text Messages</h1>
+      <p>How clients opt in, what they receive, and how to stop</p>
+    </div>
+  </div>
+
+  <main class="wrap narrow doc">
+    <section>
+      <h2>How clients opt in</h2>
+      <p>Businesses on Reign OS, operated by ReignOS LLC, take bookings on their own Reign booking page. When booking, a client can choose to receive appointment texts by entering a mobile number and checking the consent box. The box is unchecked by default, and booking works the same without it. Below is the booking form exactly as clients see it, shown here for a sample business.</p>
+    </section>
+
+    <div class="sample" aria-label="Example of the booking form">
+      <span class="sample-tag">Example: Luxe Studio booking page</span>
+      <form onsubmit="return false">
+        <label class="field" for="name">Full name</label>
+        <input id="name" type="text" autocomplete="off" placeholder="Jordan Smith">
+        <label class="field" for="email">Email</label>
+        <input id="email" type="email" autocomplete="off" placeholder="jordan@example.com">
+        <label class="field" for="phone">Mobile number (optional)</label>
+        <input id="phone" type="tel" autocomplete="off" placeholder="(404) 555-0123">
+        <label class="consent" for="sms-consent">
+          <input id="sms-consent" type="checkbox">
+          <span>Text me booking confirmations and reminders from Luxe Studio via Reign. Message frequency varies (about 2–4 per booking). Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out. Consent is not required to book. See our <a href="/privacy/">Privacy Policy</a> and <a href="/terms/#sms">SMS Terms</a>.</span>
+        </label>
+        <button class="btn btn-primary" type="button" disabled>Confirm booking</button>
+      </form>
+    </div>
+    <p class="note">This is a display example; it does not book or send messages.</p>
+
+    <section style="margin-top:40px">
+      <h2>Messages clients receive</h2>
+      <p>Only transactional messages about the client's own bookings. No marketing.</p>
+      <div class="msgs">
+        <div class="msg"><b>Confirmation:</b> Reign: Your appointment at Luxe Studio is confirmed for Tue, Nov 18 at 2:00 PM. Details: https://app.getreignos.com/book/luxe-studio. Reply STOP to opt out.</div>
+        <div class="msg"><b>Reminder:</b> Reign: Reminder: Luxe Studio tomorrow at 2:00 PM. Need to change it? https://app.getreignos.com/book/luxe-studio. Reply STOP to opt out.</div>
+        <div class="msg"><b>Cancellation:</b> Reign: Your Luxe Studio appointment on Nov 18 was canceled. Rebook: https://app.getreignos.com/book/luxe-studio. Reply STOP to opt out.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Program details</h2>
+      <ul>
+        <li><strong>Program name:</strong> Reign booking notifications, by ReignOS LLC.</li>
+        <li><strong>Message frequency:</strong> Varies, usually 2–4 messages per booking.</li>
+        <li><strong>Cost:</strong> Message and data rates may apply.</li>
+        <li><strong>Opt out:</strong> Reply <strong>STOP</strong> to any message. You'll get one confirmation and no further texts. Reply <strong>START</strong> to resubscribe.</li>
+        <li><strong>Help:</strong> Reply <strong>HELP</strong>, or email <a href="mailto:support@getreignos.com">support@getreignos.com</a>.</li>
+        <li><strong>Carriers:</strong> Mobile carriers are not liable for delayed or undelivered messages.</li>
+        <li><strong>Privacy:</strong> Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes. SMS opt-in data and consent are never shared with third parties. See our <a href="/privacy/">Privacy Policy</a>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Automatic replies</h2>
+      <div class="msgs">
+        <div class="msg"><b>After opting in:</b> Reign: You're subscribed to booking texts from Luxe Studio. Msg frequency varies. Msg &amp; data rates may apply. Reply HELP for help, STOP to opt out.</div>
+        <div class="msg"><b>HELP:</b> Reign booking texts. Help: support@getreignos.com. Msg &amp; data rates may apply. Reply STOP to opt out.</div>
+        <div class="msg"><b>STOP:</b> Reign: You're unsubscribed and won't get more texts. Reply START to resubscribe.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>© 2026 ReignOS LLC · Decatur, Georgia · <a href="mailto:support@getreignos.com">support@getreignos.com</a></div>
+      <nav aria-label="Legal">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Service</a>
+        <a href="/sms/">SMS Terms</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
